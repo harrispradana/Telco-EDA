@@ -105,3 +105,21 @@ Kesimpulan yang didapat dari analisis bivariate adalah:
 * Streaming TV dan film lebih populer pada kelompok user usia senior dan kelompok user yang tinggal bersama tanggungan
 * Kelompok user yang menggunakan layanan telepon dan kelompok user yang tidak menggunakan layanan telepon memiliki karakteristik lama berlangganan yang hampir sama
 * Kelompok user yang menggunakan layanan internet fiber optik dan kelompok user yang menggunakan layanan internet DSL memiliki karakteristik lama berlangganan yang hampir sama
+
+
+## Pemahaman Bisnis
+* Dari data yang ada dalam dataset ini, maka pertanyaan terkait kegiatan bisnis perusahaan yang dapat ditanyakan adalah:
+  * Apakah konsumen yang menggunakan seluruh layanan yang ditawarkan lebih loyal?
+  * Pada konsumen yang melakukan streaming, bagaimana karakteristiknya?
+    * Jenis streaming apa yang lebih populer berdasarkan gender dan usia?
+    * Apa jenis streaming yang lebih populer berdasarkan tanggungan?
+    * Kegiatan streaming apa yang secara keseluruhan lebih populer?
+    * Bagaimana perbandingan jumlah konsumen yang hanya melakukan salah satu streaming (TV atau film) dengan konsumen yang melakukan keduanya?
+    * Bagaimana perbandingan jumlah konsumen yang melakukan streaming (TV, film, dan keduanya) terhadap konsumen yang tidak melakukan streaming?
+  * Bagaimana karekteristik konsumen yang memutuskan untuk berhenti berlangganan?
+    * Berapa rata-rata tagihan bulanan, median tagihan bulanan, standar deviasi tagihan bulanan, dan rata-rata lama berlangganan berdasarkan konsumen yang berhenti berlangganan?
+    * Apa metode pembayaran yang paling banyak digunakan jika dilihat berdasarkan layanan internet yang digunakan dan user yang berhenti berlangganan?
+    * Berapa jumlah user yang berhenti berlangganan berdasarkan tanggungan dan layanan internet?
+    * Berapa jumlah user yang berhenti berlangganan berdasarkan usia dan layanan internet?
+    * Berapa jumlah user yang berhenti berlangganan berdasarkan kontrak dan layanan internet?
+    * Berapa rata-rata tagihan per bulan, rata-rata lama berlangganan user, dan jumlah user jika dikelompokkan berdasarkan layanan internet yang digunakan dan user yang berhenti berlangganan?
