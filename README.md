@@ -115,11 +115,11 @@ Kesimpulan yang didapat dari analisis bivariate adalah:
     * Bagaimana perbandingan jumlah konsumen yang melakukan streaming (TV, film, dan keduanya) terhadap konsumen yang tidak melakukan streaming?
   * Bagaimana karekteristik konsumen yang memutuskan untuk berhenti berlangganan?
     * Berapa rata-rata tagihan bulanan, median tagihan bulanan, standar deviasi tagihan bulanan, dan rata-rata lama berlangganan berdasarkan konsumen yang berhenti berlangganan?
-    * Apa metode pembayaran yang paling banyak digunakan jika dilihat berdasarkan layanan internet yang digunakan dan user yang berhenti berlangganan?
-    * Berapa jumlah user yang berhenti berlangganan berdasarkan tanggungan dan layanan internet?
-    * Berapa jumlah user yang berhenti berlangganan berdasarkan usia dan layanan internet?
-    * Berapa jumlah user yang berhenti berlangganan berdasarkan kontrak dan layanan internet?
-    * Berapa rata-rata tagihan per bulan, rata-rata lama berlangganan user, dan jumlah user jika dikelompokkan berdasarkan layanan internet yang digunakan dan user yang berhenti berlangganan?
+    * Apa metode pembayaran yang paling banyak digunakan jika dilihat berdasarkan layanan internet yang digunakan dan konsumen yang berhenti berlangganan?
+    * Berapa jumlah konsumen yang berhenti berlangganan berdasarkan tanggungan dan layanan internet?
+    * Berapa jumlah konsumen yang berhenti berlangganan berdasarkan usia dan layanan internet?
+    * Berapa jumlah konsumen yang berhenti berlangganan berdasarkan kontrak dan layanan internet?
+    * Berapa rata-rata tagihan per bulan, rata-rata lama berlangganan user, dan jumlah user jika dikelompokkan berdasarkan layanan internet yang digunakan dan konsumen yang berhenti berlangganan?
 
 
 ## Analisis Mendalam (Deep Dive Analysis)
@@ -159,3 +159,11 @@ Selain itu, rata-rata lama berlangganan user yang menggunakan seluruh layanan me
   
    Terdapat 3495 user yang melakukan streaming. Nilai tersebut setara dengan 63.41% dari kelompok user yang menggunakan layanan internet (5512 user layanan internet) atau 49.7% dari total user (7032 total user). Sehingga dapat disimpulkan pada kelompok user yang menggunakan layanan internet, mayoritas melakukan kegiatan streaming
      
+* Bagaimana karekteristik konsumen yang memutuskan untuk berhenti berlangganan?
+  * Berapa rata-rata tagihan bulanan, median tagihan bulanan, standar deviasi tagihan bulanan, dan rata-rata lama berlangganan berdasarkan konsumen yang berhenti berlangganan?
+
+![image](https://user-images.githubusercontent.com/97722405/158394266-5cdd307c-9a0f-4a11-adc4-2450dab1000a.png)
+
+   Dari hasil di atas dapat diketahui bahwa secara rata-rata dan median, tagihan bulanan kelompok user yang berhenti berlangganan lebih tinggi jika dibandingkan dengan kelompok user yang melanjutkan berlangganan. Selain itu nilai standar deviasi kelompok user yang berhenti berlangganan yang lebih kecil menunjukkan bahwa sebaran nilai tagihan bulanan dalam kelompok tersebut semakin dekat dengan rata-rata nya
+
+   Sedangkan dari rata-rata- lama berlangganan, kelompok user yang berhenti berlangganan memiliki rata-rata lama berlangganan yang lebih rendah dibanding dengan kelompok user yang melanjutkan berlangganan
