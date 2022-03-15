@@ -88,7 +88,7 @@ Kesimpulan yang didapat dari hasil analisis univariate kolom string adalah:
 * Mayoritas user (90.32%) menggunakan layanan telepon yang ditawarkan
 * Dari 6352 user yang menggunakan layanan telepon, sebanyak 46.8% user menggunakan lebih dari satu jaringan telepon
 * Layanan internet yang paling populer adalah layanan internet berbasis fiber optik (56.1%)
-* Layanan tambahan berupa keamanan onliner, pencadangan online, perlindungan perangkat, dan dukungan teknis kurang populer
+* Layanan tambahan berupa keamanan online, pencadangan online, perlindungan perangkat, dan dukungan teknis kurang populer
 * Jumlah user yang melakukan streaming TV dengan yang tidak cukup berimbang
 * Jumlah user yang melakukan streaming film dengan yang tidak cukup berimbang
 * Metode pembayaran yang paling populer adalah cek elektronik (33.6%)
@@ -123,3 +123,6 @@ Kesimpulan yang didapat dari analisis bivariate adalah:
     * Berapa jumlah user yang berhenti berlangganan berdasarkan usia dan layanan internet?
     * Berapa jumlah user yang berhenti berlangganan berdasarkan kontrak dan layanan internet?
     * Berapa rata-rata tagihan per bulan, rata-rata lama berlangganan user, dan jumlah user jika dikelompokkan berdasarkan layanan internet yang digunakan dan user yang berhenti berlangganan?
+
+
+## Analisis Mendalam (Deep Dive Analysis)
