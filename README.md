@@ -111,10 +111,7 @@ Kesimpulan yang didapat dari analisis bivariate adalah:
 * Dari data yang ada dalam dataset ini, maka pertanyaan terkait kegiatan bisnis perusahaan yang dapat ditanyakan adalah:
   * Apakah konsumen yang menggunakan seluruh layanan yang ditawarkan lebih loyal?
   * Pada konsumen yang melakukan streaming, bagaimana karakteristiknya?
-    * Jenis streaming apa yang lebih populer berdasarkan gender dan usia?
-    * Apa jenis streaming yang lebih populer berdasarkan tanggungan?
     * Kegiatan streaming apa yang secara keseluruhan lebih populer?
-    * Bagaimana perbandingan jumlah konsumen yang hanya melakukan salah satu streaming (TV atau film) dengan konsumen yang melakukan keduanya?
     * Bagaimana perbandingan jumlah konsumen yang melakukan streaming (TV, film, dan keduanya) terhadap konsumen yang tidak melakukan streaming?
   * Bagaimana karekteristik konsumen yang memutuskan untuk berhenti berlangganan?
     * Berapa rata-rata tagihan bulanan, median tagihan bulanan, standar deviasi tagihan bulanan, dan rata-rata lama berlangganan berdasarkan konsumen yang berhenti berlangganan?
@@ -126,3 +123,39 @@ Kesimpulan yang didapat dari analisis bivariate adalah:
 
 
 ## Analisis Mendalam (Deep Dive Analysis)
+Analisis mendalam dilakukan untuk menjawab pertanyaan-pertanyaan yang ada pada bagian pemahaman bisnis dengan melakukan analisis deskriptif dengan bantuan fitur groupby dan aggregate dari Python.
+
+### Menambah Variabel
+Penambahan variabel ini dilakukan untuk memberikan informasi tambahan yang dapat digunakan untuk melakukan analisis setelahnya. Data yang digunakan untuk mengisi variabel baru ini bersumber dari variabel yang sebelumnya sudah ada di dataset. Variabel-variabel baru tersebut adalah:
+ * Internet: kolom boolean yang memberikan informasi apakah user menggunakan layanan internet (baik berbasis DSL atau fiber optik) atau tidak
+ * Streaming: kolom boolean yang memberikan informasi apakah user menggunakan setidaknya salah satu layanan streaming (TV atau film)
+ * StreamingAll: kolom boolean yang memberikan informasi apakah user menggunakan layanan streaming TV dan film secara bersamaan
+ * StreamTV: merupakan kolom boolean yang memberikan informasi apakah user melakukan streaming TV 
+ * StreamMov: merupakan kolom boolean yang memberikan informasi apakah user melakukan streaming film
+ * CompletePack: adalah kolom boolean yang memberikan informasi apakah user menggunakan seluruh layanan yang ditawarkan
+
+### Analisis Deskriptif
+* Apakah konsumen yang menggunakan seluruh layanan yang ditawarkan lebih loyal?
+
+![image](https://user-images.githubusercontent.com/97722405/158360886-07ea4783-b294-4671-b5cf-ec9950c5d28a.png)
+
+![image](https://user-images.githubusercontent.com/97722405/158364081-6d5ccb40-d1ad-4548-8b3b-f921e20817c1.png)
+
+Dari hasil data di atas dapat diketahui bahwa **loyalitas user yang menggunakan seluruh layanan lebih baik dibanding user yang hanya menggunakan beberapa layanan**. Hal ini dapat dilihat dari persentase user yang masih melanjutkan berlangganan pada kelompok user yang menggunakan seluruh layanan mencapai 94.9%, sedangkan pada user yang melanjutkan berlangganan pada kelompok tidak menggunakan seluruh layanan hanya sebesar 69.3%.
+
+Selain itu, rata-rata lama berlangganan user yang menggunakan seluruh layanan mencapai 60.7 bulan sedangkan untuk user yang tidak menggunakan seluruh layanan nilainya hanya 30.9 bulan.
+
+* Pada konsumen yang melakukan streaming, bagaimana karakteristiknya?
+  * Kegiatan streaming apa yang secara keseluruhan lebih populer?
+
+![image](https://user-images.githubusercontent.com/97722405/158363618-84eff28d-4345-4b1b-b11d-a483ffbcfa72.png)
+
+
+   Mayoritas user yang melakukan streaming melakukan kedua layanan streaming tersebut (TV dan film). Terdapat 3495 user yang menggunakan layanan streaming (streaming TV, streaming film, atau keduanya). Sebanyak 55.48% user menggunakan kedua layanan streaming secara bersamaan, 22.66% user hanya menggunakan layanan streaming film, dan 21.86% hanya menggunakan layanan streaming TV
+  * Bagaimana perbandingan jumlah konsumen yang melakukan streaming (TV, film, dan keduanya) terhadap konsumen yang tidak melakukan streaming?
+  
+  ![image](https://user-images.githubusercontent.com/97722405/158363902-14c721f9-ebad-458d-894a-852edd5bc623.png)
+
+  
+   Terdapat 3495 user yang melakukan streaming. Nilai tersebut setara dengan 63.41% dari kelompok user yang menggunakan layanan internet (5512 user layanan internet) atau 49.7% dari total user (7032 total user). Sehingga dapat disimpulkan pada kelompok user yang menggunakan layanan internet, mayoritas melakukan kegiatan streaming
+     
