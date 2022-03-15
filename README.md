@@ -157,13 +157,34 @@ Selain itu, rata-rata lama berlangganan user yang menggunakan seluruh layanan me
   ![image](https://user-images.githubusercontent.com/97722405/158363902-14c721f9-ebad-458d-894a-852edd5bc623.png)
 
   
-   Terdapat 3495 user yang melakukan streaming. Nilai tersebut setara dengan 63.41% dari kelompok user yang menggunakan layanan internet (5512 user layanan internet) atau 49.7% dari total user (7032 total user). Sehingga dapat disimpulkan pada kelompok user yang menggunakan layanan internet, mayoritas melakukan kegiatan streaming
+   Dari 3495 user yang melakukan streaming. Nilai tersebut setara dengan 63.41% dari kelompok user yang menggunakan layanan internet (5512 user layanan internet) atau 49.7% dari total user (7032 total user). Sehingga dapat disimpulkan pada kelompok user yang menggunakan layanan internet, mayoritas melakukan kegiatan streaming
      
 * Bagaimana karekteristik konsumen yang memutuskan untuk berhenti berlangganan?
   * Berapa rata-rata tagihan bulanan, median tagihan bulanan, standar deviasi tagihan bulanan, dan rata-rata lama berlangganan berdasarkan konsumen yang berhenti berlangganan?
 
 ![image](https://user-images.githubusercontent.com/97722405/158394266-5cdd307c-9a0f-4a11-adc4-2450dab1000a.png)
 
-   Dari hasil di atas dapat diketahui bahwa secara rata-rata dan median, tagihan bulanan kelompok user yang berhenti berlangganan lebih tinggi jika dibandingkan dengan kelompok user yang melanjutkan berlangganan. Selain itu nilai standar deviasi kelompok user yang berhenti berlangganan yang lebih kecil menunjukkan bahwa sebaran nilai tagihan bulanan dalam kelompok tersebut semakin dekat dengan rata-rata nya
+  Dari hasil di atas dapat diketahui bahwa secara rata-rata dan median, tagihan bulanan kelompok user yang berhenti berlangganan lebih tinggi jika dibandingkan dengan kelompok user yang melanjutkan berlangganan. Selain itu nilai standar deviasi kelompok user yang berhenti berlangganan yang lebih kecil menunjukkan bahwa sebaran nilai tagihan bulanan dalam kelompok tersebut semakin dekat dengan rata-rata nya
 
    Sedangkan dari rata-rata- lama berlangganan, kelompok user yang berhenti berlangganan memiliki rata-rata lama berlangganan yang lebih rendah dibanding dengan kelompok user yang melanjutkan berlangganan
+   
+  * Apa metode pembayaran yang paling banyak digunakan jika dilihat berdasarkan layanan internet yang digunakan dan konsumen yang berhenti berlangganan?
+  
+    ![image](https://user-images.githubusercontent.com/97722405/158488095-3b6c5232-e4f5-455a-9ac0-361f483a9fdb.png)
+    
+    ![image](https://user-images.githubusercontent.com/97722405/158488155-e8995461-2eda-41e5-a9e1-172dd6ef34ab.png)
+
+  Dari hasil di atas dapat diketahui bahwa pada kelompok user yang berhenti berlangganan, jika dibagi berdasarkan metode pembayaran dan layanan internet yang digunakan 3 dari 4 kategori metode pembayaran didominasi oleh user yang menggunakan layanan internet berbasis fiber optik. Ketiga kategori tersebut adalah transfer bank (72.5% adalah user fiber optik), kemudian kartu kredit (65% adalah user fiber optik), dan terakhir cek elektronik (79.3%). Sedangkan pada kategori cek yang dikirim melalui surat didominasi oleh user yang menggunakan internet DSL (41.2%) namun user internet fiber optik juga memiliki persentase yang tinggi (35.7%).
+   
+  * Berapa jumlah konsumen yang berhenti berlangganan berdasarkan tanggungan dan layanan internet
+    
+    ![image](https://user-images.githubusercontent.com/97722405/158488321-7e0ea5a6-0a4a-432c-8351-528267833952.png)
+   
+  Dari data di atas dapat dilihat bahwa user yang berhenti berlangganan lebih dipengaruhi oleh layanan internet yang digunakan. Hal ini bisa dilihat pada kelompok user yang berhenti berlangganan yang tidak tinggal bersama tanggungan dan kelompok user yang berhenti berlangganan yang tinggal bersama tanggungan, kedua kelompok ini didominasi oleh user yang menggunakan layanan internet fiber optik. Pada kelompok user yang berhenti berlangganan yang tidak tinggal bersama tanggungan, sebanyak 71% menggunakan layanan internet fiber optik. Pada kelompok user yang berhenti berlangganan yang tinggal bersama tanggungan, sebanyak 62% menggunakan layanan internet fiber optik
+
+  * Berapa jumlah konsumen yang berhenti berlangganan berdasarkan usia dan layanan internet?
+  
+  ![image](https://user-images.githubusercontent.com/97722405/158488562-fd298c59-e35a-4e5a-ba3f-b19d3f4c42ed.png)
+  
+  Dari data di atas dapat dilihat bahwa user yang berhenti berlangganan lebih dipengaruhi oleh layanan internet yang digunakan. Hal ini bisa dilihat pada kelompok user yang berusia senior dan berhenti berlangganan serta kelompok user yang berusia bukan senior dan berhenti berlangganan, kedua kelompok ini didominasi oleh user yang menggunakan layanan internet fiber optik. Pada kelompok user usia senior dan memilih berhenti berlangganan, sebanyak 82.7% user menggunakan layanan internet berbasis fiber optik. Pada kelompok user usia bukan senior dan memilih berhenti berlangganan, sebanyak 65% user menggunakan layanan internet berbasis fiber optik
+
