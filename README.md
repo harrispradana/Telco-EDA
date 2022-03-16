@@ -75,36 +75,36 @@ Yang perlu diperhatikan adalah, untuk kolom customerID tidak dimasukkan ke dalam
 
 ### Analisis Univariate
 Kesimpulan yang didapat dari hasil analisis univariate kolom numerik adalah:
-* Rata-rata lama berlangganan dari seluruh user adalah 32.42 bulan dengan nilai median 29 bulan
-* Rata-rata tagihan bulanan dari seluruh user adalah 64.80 dengan nilai median 70.35
-* Rata-rata total tagihan dari seluruh user adalah 2283.30 dengan nilai median 1397.48
+* Rata-rata lama berlangganan dari seluruh konsumen adalah 32.42 bulan dengan nilai median 29 bulan
+* Rata-rata tagihan bulanan dari seluruh konsumen adalah 64.80 dengan nilai median 70.35
+* Rata-rata total tagihan dari seluruh konsumen adalah 2283.30 dengan nilai median 1397.48
 * Tidak terdapat outlier untuk kolom numerik (tenure, MonthlyCharges, dan TotalCharges)
 
 Kesimpulan yang didapat dari hasil analisis univariate kolom string adalah:
-* Jumlah user berimbang antara user dengan jenis kelamin pria dan perempuan
-* Mayoritas user (83.75%) merupakan kelompok usia dibawah 65 tahun
-* Jumlah user yang memiliki pasangan dengan yang tidak memiliki pasangan memiliki jumlah yang berimbang
-* Mayoritas user (70.15%) masuk ke dalam kelompok yang tidak tinggal bersama tanggungan (anak, orang tua, kakek, nenek, dsb)
-* Mayoritas user (90.32%) menggunakan layanan telepon yang ditawarkan
-* Dari 6352 user yang menggunakan layanan telepon, sebanyak 46.8% user menggunakan lebih dari satu jaringan telepon
+* Jumlah konsumen berimbang antara konsumen dengan jenis kelamin pria dan perempuan
+* Mayoritas konsumen (83.75%) merupakan kelompok usia dibawah 65 tahun
+* Jumlah konsumen yang memiliki pasangan dengan yang tidak memiliki pasangan memiliki jumlah yang berimbang
+* Mayoritas konsumen (70.15%) masuk ke dalam kelompok yang tidak tinggal bersama tanggungan (anak, orang tua, kakek, nenek, dsb)
+* Mayoritas konsumen (90.32%) menggunakan layanan telepon yang ditawarkan
+* Dari 6352 konsumen yang menggunakan layanan telepon, sebanyak 46.8% konsumen menggunakan lebih dari satu jaringan telepon
 * Layanan internet yang paling populer adalah layanan internet berbasis fiber optik (56.1%)
 * Layanan tambahan berupa keamanan online, pencadangan online, perlindungan perangkat, dan dukungan teknis kurang populer
-* Jumlah user yang melakukan streaming TV dengan yang tidak cukup berimbang
-* Jumlah user yang melakukan streaming film dengan yang tidak cukup berimbang
+* Jumlah konsumen yang melakukan streaming TV dengan yang tidak cukup berimbang
+* Jumlah konsumen yang melakukan streaming film dengan yang tidak cukup berimbang
 * Metode pembayaran yang paling populer adalah cek elektronik (33.6%)
 * Jenis kontrak yang paling populer adalah kontrak per bulan (55%)
 * Jenis tagihan yang paling populer adalah tagihan tanpa kertas (59.2%)
-* Persentase user yang masih melanjutkan menggunakan layanan yang ditawarkan adalah sebesar 73.4%
+* Persentase konsumen yang masih melanjutkan menggunakan layanan yang ditawarkan adalah sebesar 73.4%
 
 ### Analisis Bivariate
 Kesimpulan yang didapat dari analisis bivariate adalah:
-* Jika user yang berhenti berlangganan (churn) dilihat berdasarkan beberapa kategori, ada 5 kategori yang perlu menjadi perhatian yaitu usia user, tanggungan, layanan internet yang digunakan, kontrak, dan metode pembayaran
-* Berdasarkan median datanya, kelompok user yang berhenti berlangganan memiliki tagihan bulanan yang lebih tinggi dibanding dengan user yang masih melanjutkan berlangganan
+* Jika konsumen yang berhenti berlangganan (churn) dilihat berdasarkan beberapa kategori, ada 5 kategori yang perlu menjadi perhatian yaitu usia konsumen, tanggungan, layanan internet yang digunakan, kontrak, dan metode pembayaran
+* Berdasarkan median datanya, kelompok konsumen yang berhenti berlangganan memiliki tagihan bulanan yang lebih tinggi dibanding dengan konsumen yang masih melanjutkan berlangganan
 * Layanan internet berbasis fiber optik memiliki median tagihan paling tinggi jika dibandingkan dengan layanan internet DSL dan tanpa layanan internet
 * Layanan telepon memiliki median tagihan yang lebih tinggi jika dibandingkan dengan tanpa layanan telepon
-* Streaming TV dan film lebih populer pada kelompok user usia senior dan kelompok user yang tinggal bersama tanggungan
-* Kelompok user yang menggunakan layanan telepon dan kelompok user yang tidak menggunakan layanan telepon memiliki karakteristik lama berlangganan yang hampir sama
-* Kelompok user yang menggunakan layanan internet fiber optik dan kelompok user yang menggunakan layanan internet DSL memiliki karakteristik lama berlangganan yang hampir sama
+* Streaming TV dan film lebih populer pada kelompok konsumen usia senior dan kelompok konsumen yang tinggal bersama tanggungan
+* Kelompok konsumen yang menggunakan layanan telepon dan kelompok konsumen yang tidak menggunakan layanan telepon memiliki karakteristik lama berlangganan yang hampir sama
+* Kelompok konsumen yang menggunakan layanan internet fiber optik dan kelompok konsumen yang menggunakan layanan internet DSL memiliki karakteristik lama berlangganan yang hampir sama
 
 
 ## Pemahaman Bisnis
@@ -119,7 +119,7 @@ Kesimpulan yang didapat dari analisis bivariate adalah:
     * Berapa jumlah konsumen yang berhenti berlangganan berdasarkan tanggungan dan layanan internet?
     * Berapa jumlah konsumen yang berhenti berlangganan berdasarkan usia dan layanan internet?
     * Berapa jumlah konsumen yang berhenti berlangganan berdasarkan kontrak dan layanan internet?
-    * Berapa rata-rata tagihan per bulan, rata-rata lama berlangganan user, dan jumlah user jika dikelompokkan berdasarkan layanan internet yang digunakan dan konsumen yang berhenti berlangganan?
+    * Berapa rata-rata tagihan per bulan, rata-rata lama berlangganan konsumen, dan jumlah konsumen jika dikelompokkan berdasarkan layanan internet yang digunakan dan konsumen yang berhenti berlangganan?
 
 
 ## Analisis Mendalam (Deep Dive Analysis)
@@ -127,12 +127,12 @@ Analisis mendalam dilakukan untuk menjawab pertanyaan-pertanyaan yang ada pada b
 
 ### Menambah Variabel
 Penambahan variabel ini dilakukan untuk memberikan informasi tambahan yang dapat digunakan untuk melakukan analisis setelahnya. Data yang digunakan untuk mengisi variabel baru ini bersumber dari variabel yang sebelumnya sudah ada di dataset. Variabel-variabel baru tersebut adalah:
- * Internet: kolom boolean yang memberikan informasi apakah user menggunakan layanan internet (baik berbasis DSL atau fiber optik) atau tidak
- * Streaming: kolom boolean yang memberikan informasi apakah user menggunakan setidaknya salah satu layanan streaming (TV atau film)
- * StreamingAll: kolom boolean yang memberikan informasi apakah user menggunakan layanan streaming TV dan film secara bersamaan
- * StreamTV: merupakan kolom boolean yang memberikan informasi apakah user melakukan streaming TV 
- * StreamMov: merupakan kolom boolean yang memberikan informasi apakah user melakukan streaming film
- * CompletePack: adalah kolom boolean yang memberikan informasi apakah user menggunakan seluruh layanan yang ditawarkan
+ * Internet: kolom boolean yang memberikan informasi apakah konsumen menggunakan layanan internet (baik berbasis DSL atau fiber optik) atau tidak
+ * Streaming: kolom boolean yang memberikan informasi apakah konsumen menggunakan setidaknya salah satu layanan streaming (TV atau film)
+ * StreamingAll: kolom boolean yang memberikan informasi apakah konsumen menggunakan layanan streaming TV dan film secara bersamaan
+ * StreamTV: merupakan kolom boolean yang memberikan informasi apakah konsumen melakukan streaming TV 
+ * StreamMov: merupakan kolom boolean yang memberikan informasi apakah konsumenr melakukan streaming film
+ * CompletePack: adalah kolom boolean yang memberikan informasi apakah konsumen menggunakan seluruh layanan yang ditawarkan
 
 ### Analisis Deskriptif
 * Apakah konsumen yang menggunakan seluruh layanan yang ditawarkan lebih loyal?
@@ -141,9 +141,9 @@ Penambahan variabel ini dilakukan untuk memberikan informasi tambahan yang dapat
 
 ![image](https://user-images.githubusercontent.com/97722405/158364081-6d5ccb40-d1ad-4548-8b3b-f921e20817c1.png)
 
-Dari hasil data di atas dapat diketahui bahwa **loyalitas user yang menggunakan seluruh layanan lebih baik dibanding user yang hanya menggunakan beberapa layanan**. Hal ini dapat dilihat dari persentase user yang masih melanjutkan berlangganan pada kelompok user yang menggunakan seluruh layanan mencapai 94.9%, sedangkan pada user yang melanjutkan berlangganan pada kelompok tidak menggunakan seluruh layanan hanya sebesar 69.3%.
+Dari hasil data di atas dapat diketahui bahwa **loyalitas konsumen yang menggunakan seluruh layanan lebih baik dibanding konsumen yang hanya menggunakan beberapa layanan**. Hal ini dapat dilihat dari persentase konsumen yang masih melanjutkan berlangganan pada kelompok konsumen yang menggunakan seluruh layanan mencapai 94.9%, sedangkan pada konsumen yang melanjutkan berlangganan pada kelompok tidak menggunakan seluruh layanan hanya sebesar 69.3%.
 
-Selain itu, rata-rata lama berlangganan user yang menggunakan seluruh layanan mencapai 60.7 bulan sedangkan untuk user yang tidak menggunakan seluruh layanan nilainya hanya 30.9 bulan.
+Selain itu, rata-rata lama berlangganan konsumen yang menggunakan seluruh layanan mencapai 60.7 bulan sedangkan untuk konsumen yang tidak menggunakan seluruh layanan nilainya hanya 30.9 bulan.
 
 * Pada konsumen yang melakukan streaming, bagaimana karakteristiknya?
   * Kegiatan streaming apa yang secara keseluruhan lebih populer?
@@ -151,22 +151,22 @@ Selain itu, rata-rata lama berlangganan user yang menggunakan seluruh layanan me
 ![image](https://user-images.githubusercontent.com/97722405/158363618-84eff28d-4345-4b1b-b11d-a483ffbcfa72.png)
 
 
-   Mayoritas user yang melakukan streaming melakukan kedua layanan streaming tersebut (TV dan film). Terdapat 3495 user yang menggunakan layanan streaming (streaming TV, streaming film, atau keduanya). Sebanyak 55.48% user menggunakan kedua layanan streaming secara bersamaan, 22.66% user hanya menggunakan layanan streaming film, dan 21.86% hanya menggunakan layanan streaming TV
+   Mayoritas konsumen yang melakukan streaming melakukan kedua layanan streaming tersebut (TV dan film). Terdapat 3495 konsumen yang menggunakan layanan streaming (streaming TV, streaming film, atau keduanya). Sebanyak 55.48% konsumen menggunakan kedua layanan streaming secara bersamaan, 22.66% konsumen hanya menggunakan layanan streaming film, dan 21.86% hanya menggunakan layanan streaming TV
   * Bagaimana perbandingan jumlah konsumen yang melakukan streaming (TV, film, dan keduanya) terhadap konsumen yang tidak melakukan streaming?
   
   ![image](https://user-images.githubusercontent.com/97722405/158363902-14c721f9-ebad-458d-894a-852edd5bc623.png)
 
   
-   Dari 3495 user yang melakukan streaming. Nilai tersebut setara dengan 63.41% dari kelompok user yang menggunakan layanan internet (5512 user layanan internet) atau 49.7% dari total user (7032 total user). Sehingga dapat disimpulkan pada kelompok user yang menggunakan layanan internet, mayoritas melakukan kegiatan streaming
+   Dari 3495 konsumen yang melakukan streaming. Nilai tersebut setara dengan 63.41% dari kelompok konsumen yang menggunakan layanan internet (5512 konsumen layanan internet) atau 49.7% dari total konsumen (7032 total konsumen). Sehingga dapat disimpulkan pada kelompok konsumen yang menggunakan layanan internet, mayoritas melakukan kegiatan streaming
      
 * Bagaimana karekteristik konsumen yang memutuskan untuk berhenti berlangganan?
   * Berapa rata-rata tagihan bulanan, median tagihan bulanan, standar deviasi tagihan bulanan, dan rata-rata lama berlangganan berdasarkan konsumen yang berhenti berlangganan?
 
 ![image](https://user-images.githubusercontent.com/97722405/158394266-5cdd307c-9a0f-4a11-adc4-2450dab1000a.png)
 
-  Dari hasil di atas dapat diketahui bahwa secara rata-rata dan median, tagihan bulanan kelompok user yang berhenti berlangganan lebih tinggi jika dibandingkan dengan kelompok user yang melanjutkan berlangganan. Selain itu nilai standar deviasi kelompok user yang berhenti berlangganan yang lebih kecil menunjukkan bahwa sebaran nilai tagihan bulanan dalam kelompok tersebut semakin dekat dengan rata-rata nya
+  Dari hasil di atas dapat diketahui bahwa secara rata-rata dan median, tagihan bulanan kelompok konsumen yang berhenti berlangganan lebih tinggi jika dibandingkan dengan kelompok konsumen yang melanjutkan berlangganan. Selain itu nilai standar deviasi kelompok konsumen yang berhenti berlangganan yang lebih kecil menunjukkan bahwa sebaran nilai tagihan bulanan dalam kelompok tersebut semakin dekat dengan rata-rata nya
 
-   Sedangkan dari rata-rata- lama berlangganan, kelompok user yang berhenti berlangganan memiliki rata-rata lama berlangganan yang lebih rendah dibanding dengan kelompok user yang melanjutkan berlangganan
+   Sedangkan dari rata-rata- lama berlangganan, kelompok konsumenyang berhenti berlangganan memiliki rata-rata lama berlangganan yang lebih rendah dibanding dengan kelompok konsumen yang melanjutkan berlangganan
    
   * Apa metode pembayaran yang paling banyak digunakan jika dilihat berdasarkan layanan internet yang digunakan dan konsumen yang berhenti berlangganan?
   
@@ -174,17 +174,55 @@ Selain itu, rata-rata lama berlangganan user yang menggunakan seluruh layanan me
     
     ![image](https://user-images.githubusercontent.com/97722405/158488155-e8995461-2eda-41e5-a9e1-172dd6ef34ab.png)
 
-  Dari hasil di atas dapat diketahui bahwa pada kelompok user yang berhenti berlangganan, jika dibagi berdasarkan metode pembayaran dan layanan internet yang digunakan 3 dari 4 kategori metode pembayaran didominasi oleh user yang menggunakan layanan internet berbasis fiber optik. Ketiga kategori tersebut adalah transfer bank (72.5% adalah user fiber optik), kemudian kartu kredit (65% adalah user fiber optik), dan terakhir cek elektronik (79.3%). Sedangkan pada kategori cek yang dikirim melalui surat didominasi oleh user yang menggunakan internet DSL (41.2%) namun user internet fiber optik juga memiliki persentase yang tinggi (35.7%).
+  Dari hasil di atas dapat diketahui bahwa pada kelompok konsumen yang berhenti berlangganan, jika dibagi berdasarkan metode pembayaran dan layanan internet yang digunakan 3 dari 4 kategori metode pembayaran didominasi oleh konsumen yang menggunakan layanan internet berbasis fiber optik. Ketiga kategori tersebut adalah transfer bank (72.5% adalah konsumen fiber optik), kemudian kartu kredit (65% adalah konsumen fiber optik), dan terakhir cek elektronik (79.3%). Sedangkan pada kategori cek yang dikirim melalui surat didominasi oleh konsumen yang menggunakan internet DSL (41.2%) namun konsumen internet fiber optik juga memiliki persentase yang tinggi (35.7%).
    
   * Berapa jumlah konsumen yang berhenti berlangganan berdasarkan tanggungan dan layanan internet
     
     ![image](https://user-images.githubusercontent.com/97722405/158488321-7e0ea5a6-0a4a-432c-8351-528267833952.png)
    
-  Dari data di atas dapat dilihat bahwa user yang berhenti berlangganan lebih dipengaruhi oleh layanan internet yang digunakan. Hal ini bisa dilihat pada kelompok user yang berhenti berlangganan yang tidak tinggal bersama tanggungan dan kelompok user yang berhenti berlangganan yang tinggal bersama tanggungan, kedua kelompok ini didominasi oleh user yang menggunakan layanan internet fiber optik. Pada kelompok user yang berhenti berlangganan yang tidak tinggal bersama tanggungan, sebanyak 71% menggunakan layanan internet fiber optik. Pada kelompok user yang berhenti berlangganan yang tinggal bersama tanggungan, sebanyak 62% menggunakan layanan internet fiber optik
+  Dari data di atas dapat dilihat bahwa konsumen yang berhenti berlangganan lebih dipengaruhi oleh layanan internet yang digunakan. Hal ini bisa dilihat pada kelompok konsumen yang berhenti berlangganan yang tidak tinggal bersama tanggungan dan kelompok konsumen yang berhenti berlangganan yang tinggal bersama tanggungan, kedua kelompok ini didominasi oleh konsumen yang menggunakan layanan internet fiber optik. Pada kelompok konsumen yang berhenti berlangganan yang tidak tinggal bersama tanggungan, sebanyak 71% menggunakan layanan internet fiber optik. Pada kelompok konsumen yang berhenti berlangganan yang tinggal bersama tanggungan, sebanyak 62% menggunakan layanan internet fiber optik
 
   * Berapa jumlah konsumen yang berhenti berlangganan berdasarkan usia dan layanan internet?
   
-  ![image](https://user-images.githubusercontent.com/97722405/158488562-fd298c59-e35a-4e5a-ba3f-b19d3f4c42ed.png)
+    ![image](https://user-images.githubusercontent.com/97722405/158488562-fd298c59-e35a-4e5a-ba3f-b19d3f4c42ed.png)
   
-  Dari data di atas dapat dilihat bahwa user yang berhenti berlangganan lebih dipengaruhi oleh layanan internet yang digunakan. Hal ini bisa dilihat pada kelompok user yang berusia senior dan berhenti berlangganan serta kelompok user yang berusia bukan senior dan berhenti berlangganan, kedua kelompok ini didominasi oleh user yang menggunakan layanan internet fiber optik. Pada kelompok user usia senior dan memilih berhenti berlangganan, sebanyak 82.7% user menggunakan layanan internet berbasis fiber optik. Pada kelompok user usia bukan senior dan memilih berhenti berlangganan, sebanyak 65% user menggunakan layanan internet berbasis fiber optik
+  Dari data di atas dapat dilihat bahwa konsumen yang berhenti berlangganan lebih dipengaruhi oleh layanan internet yang digunakan. Hal ini bisa dilihat pada kelompok konsumen yang berusia senior dan berhenti berlangganan serta kelompok konsumen yang berusia bukan senior dan berhenti berlangganan, kedua kelompok ini didominasi oleh konsumen yang menggunakan layanan internet fiber optik. Pada kelompok konsumen usia senior dan memilih berhenti berlangganan, sebanyak 82.7% konsumen menggunakan layanan internet berbasis fiber optik. Pada kelompok konsumen usia bukan senior dan memilih berhenti berlangganan, sebanyak 65% konsumen menggunakan layanan internet berbasis fiber optik
 
+  * Berapa jumlah konsumen yang berhenti berlangganan berdasarkan kontrak dan layanan internet?
+    
+    ![image](https://user-images.githubusercontent.com/97722405/158488916-544f518a-045c-4076-ad8e-a34280773edf.png)
+    
+    Dari data di atas dapat dilihat bahwa konsumen yang berhenti berlangganan lebih dipengaruhi oleh layanan internet yang digunakan. Hal ini bisa dilihat pada kelompok konsumen yang berhenti berlangganan yang terikat kontrak per bulan, kelompok konsumen yang berhenti berlangganan yang terikat kontrak 1 tahun, dan kelompok konsumen yang berhenti berlangganan yang terikat kontrak 2 tahun, ketiga kelompok ini didominasi oleh konsumen yang menggunakan layanan internet fiber optik. Pada kelompok konsumen yang terikat kontrak per bulan dan berhenti berlangganan, sebanyak 70.2% konsumen merupakan pengguna layanan internet fiber optik. Pada kelompok konsumen yang terikat kontrak 1 tahun dan berhenti berlangganan, sebanyak 62.6% konsumen merupakan pengguna layanan internet fiber optik. Pada kelompok konsumen yang terikat kontrak 2 tahun dan berhenti berlangganan, sebanyak 64.6% konsumen merupakan pengguna layanan internet fiber optik
+
+  * Berapa rata-rata tagihan per bulan, rata-rata lama berlangganan konsumen, dan jumlah konsumen jika dikelompokkan berdasarkan layanan internet yang digunakan dan konsumen yang berhenti berlangganan?
+    
+    ![image](https://user-images.githubusercontent.com/97722405/158489074-8906ad31-46b9-40a8-90f3-1ec49846fa2e.png)
+
+    Dari hasil di atas, informasi yang didapatkan adalah:
+    * Jika dikelompokkan berdasarkan layanan internet yang digunakan dan konsumen yang berhenti berlangganan, konsumen yang masih melanjutkan menggunakan layanan yang ditawarkan memiliki rata-rata dan median tagihan bulanan lebih tinggi dibanding dengan konsumen yang telah berhenti berlangganan
+    * Jika dikelompokkan berdasarkan layanan internet yang digunakan dan konsumen yang berhenti berlangganan, konsumen yang masih melanjutkan menggunakan layanan yang ditawarkan memiliki rata-rata lama langganan yang lebih lama jika dibandingkan dengan konsumen yang telah berhenti berlangganan
+    * Jika dikelompokkan berdasarkan layanan internet yang digunakan, mayoritas konsumen yang berhenti berlangganan (69.4%) merupakan konsumen yang menggunakan layanan internet fiber optik
+
+    Adanya perbedaan hasil dengan analisa sebelumnya, dimana kelompok konsumen yang berhenti berlangganan secara keseluruhan memiliki nilai median dan rata-rata tagihan bulanan lebih tinggi dapat dijelaskan oleh distribusi data yang digunakan untuk melakukan analisis. Pada analisis sebelumnya, data hanya dibagi berdasarkan 1 kategori saja yaitu konsumen yang berhenti berlangganan atau konsumen yang melanjutkan berlangganan.
+
+Sedangkan pada analisis ini selain dibagi berdasarkan konsumen yang berhenti berlangganan atau konsumen yang melanjutkan berlangganan, data juga dibagi lagi dengan layanan internet yang digunakan. Jika melihat data jumlah konsumen hasil pembagian tersebut dapat dilihat ada perbedaan distribusi data jika dibagi berdasarkan dengan layanan internet yang digunakan.
+
+Pada kelompok konsumen yang melanjutkan berlangganan dan dibagi berdasarkan layanan internet yang digunakan, sebaran konsumen yang menggunakan layanan internet DSL, internet fiber optik, dan tidak menggunakan layanan internet cenderung lebih merata dengan nilai persentase sebesar 37.9% untuk layanan internet DSL, 34.8% untuk layanan internet fiber optik, dan 27.3% untuk yang tidak menggunakan internet. Hal ini juga didukung oleh hasil analisa sebelumnya dimana nilai standar deviasi tagihan bulanan kelompok konsumen yang melanjutkan berlangganan (31.09) lebih tinggi dibanding kelompok konsumen yang berhenti berlangganan (24.66) yang menunjukkan pada kelompok konsumen yang melanjutkan berlangganan nilai datanya cenderung lebih tersebar menjauh dari nilai rata-ratanya.
+
+Sedangkan pada kelompok konsumen yang berhenti berlangganan, sebaran konsumen yang menggunakan layanan internet DSL, internet fiber optik, dan tidak menggunakan layanan internet cenderung lebih terpusat pada kelompok konsumen yang menggunakan layanan internet fiber optik. Komposisi sebaran data pada kelompok konsumen yang berhenti berlangganan adalah 69.4% untuk layanan internet fiber optik, 24.6% untuk layanan internet DSL, dan 6% untuk tidak menggunakan layanan internet. Hal ini menyebabkan nilai data pada kelompok ini cenderung lebih mendekati nilai rata-ratanya.
+
+## Kesimpulan dan Rekomendasi
+### Kesimpulan
+* Dengan melihat persentase konsumen yang berhenti berlangganan dan rata-rata lama berlangganan, kelompok konsumen yang menggunakan seluruh layanan yang ditawarkan lebih loyal dibanding kelompok konsumen yang hanya menggunakan beberapa layanan
+* Mayoritas konsumen (63.41%) yang menggunakan layanan internet melakukan kegiatan streaming
+  * Mayoritas konsumen (55.48%) yang melakukan streaming menggunakan kedua jenis layanan (TV dan film)
+* Secara keseluruhan, terdapat 1869 (26.6%) konsumen yang berhenti berlangganan dan mayoritas didominasi kelompok konsumen yang menggunakan internet fiber optik
+  * Mayoritas konsumen yang berhenti berlangganan (69.4%) merupakan konsumen pengguna layanan internet berbasis fiber optik
+  * Tingginya jumlah konsumen layanan internet berbasis fiber optik yang berhenti berlangganan menyebabkan secara keseluruhan, nilai rata-rata tagihan bulanan kelompok konsumen yang berhenti berlangganan lebih tinggi dibandingkan dengan konsumen yang melanjutkan berlangganan
+  * Banyaknya konsumen layanan internet fiber optik yang berhenti berlangganan juga menyebabkan pada kategori dan sub-kategori yang lain menjadi bias karena seolah-olah pada kategori dan sub-kategori tersebut terdapat banyak konsumen yang berhenti berlangganan
+  * Oleh karena itu konsumen yang menggunakan layanan internet berbasis fiber optik perlu memiliki perhatian khusus. Hal ini dikarenakan karakteristik konsumen pada kelompok tersebut memiliki tagihan per bulan yang tinggi jika dibandingkan dengan konsumen dari kelompok lain (konsumen layanan internet DSL dan konsumen yang tidak menggunakan layanan internet), namun tingkat loyalitas konsumen layanan fiber optik termasuk rendah (41.9% konsumen tidak melanjutkan berlangganan)
+
+### Rekomendasi
+* Diduga ada masalah dalam produk layanan internet fiber optik yang ditawarkan jika melihat tingginya jumlah konsumen produk tersebut yang memutuskan untuk berhenti berlangganan. Untuk itu disarankan kepada tim teknis terkait untuk melakukan evaluasi terhadap produk tersebut
+* Tingginya loyalitas konsumen yang menggunakan seluruh layanan yang ditawarkan perlu diberi apresiasi sebagai bentuk pengakuan atas loyalitas mereka. Hal ini dapat berupa cinderamata, potongan harga, atau poin loyalitas yang dapat ditukar dengan sesuatu
+* Populernya kegiatan streaming yang dilakukan oleh konsumen yang menggunakan layanan internet bisa menjadi peluang bagi perusahaan untuk bekerja sama dengan penyedia jasa streaming (misalnya dalam bentuk bundling paket internet dan paket berlangganan streaming) dengan tujuan untuk meningkatkan loyalitas konsumen yang sudah ada saat ini dan sebagai sarana untuk mendapatkan konsumen baru
